@@ -39,6 +39,10 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 " surround.vim
 NeoBundle 'tpope/vim-surround'
 " Syntax-plugins
+NeoBundle 'hail2u/vim-css3-syntax'
+NeoBundle 'taichouchou2/html5.vim'
+NeoBundle 'taichouchou2/vim-javascript'
+NeoBundle 'cakebaker/scss-syntax.vim'
 
 call neobundle#end()
 
