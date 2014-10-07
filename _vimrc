@@ -38,6 +38,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'bronson/vim-trailing-whitespace'
 " surround.vim
 NeoBundle 'tpope/vim-surround'
+" Syntax-plugins
 
 call neobundle#end()
 
@@ -78,10 +79,12 @@ set statusline+=%{fugitive#statusline()}
 " 検索設定
 set hlsearch
 set incsearch
-" 不可視文字の表示
-set list
 " 対応するカッコやプレースを表示する
 set showmatch
+" 不可視文字を表示する
+set list
+" タブと行の続きを可視化する
+set listchars=tab:>\ ,extends:<
 " 改行時にインデントを継承する
 set autoindent
 set smartindent
