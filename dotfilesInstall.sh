@@ -33,3 +33,6 @@ if [ -d ~/.vim ]; then
 
 fi
 ln -s ~/$DOTFILES_DIRECTORY/vimfiles ~/.vim
+# update git submodule
+git submodule init
+git submodule update
