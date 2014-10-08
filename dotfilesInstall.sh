@@ -32,8 +32,4 @@ if [ -d ~/.vim ]; then
 	fi
 
 fi
-ln -s ~/$DOTFILES_DIRECTORY/vimfiles/ ~/.vim
-
-if [ ! -d ~/.vim/bundle/neobundle.vim ]; then
-	git submodule add https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-fi
+ln -s ~/$DOTFILES_DIRECTORY/vimfiles ~/.vim
