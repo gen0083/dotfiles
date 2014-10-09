@@ -101,6 +101,9 @@ set autoindent
 set smartindent
 " カーソルを行頭・行末で止まらないようにする
 set whichwrap=b,s,h,l,<,>,[,]
+" Xキーで文字削除する際にレジスタに入れない
+nnoremap x "_x
+vnoremap x "_x
 " vim起動時に自動的にvim-indent-guidesをオンにする
 let g:indent_guides_enable_on_vim_startup = 1
 " grep検索の実行後にQuickFix Listを表示する
