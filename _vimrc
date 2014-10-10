@@ -71,7 +71,9 @@ syntax on
 set number
 set ruler
 " バックアップ・スワップファイルを作成しない
+set backupdir=~/tmp/vim
 set nobackup
+set directory=~/tmp/vim
 set noswapfile
 " タイトルバーにファイルのパス情報を表示
 set title
