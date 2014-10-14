@@ -2,3 +2,9 @@ colorscheme desert
 syntax on
 set nobackup
 set noswapfile
+
+if has('gui_macvim')
+    set transparency=2
+    set lines=40 columns=150
+    set guioptions-=T
+endif
