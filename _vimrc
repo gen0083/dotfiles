@@ -71,10 +71,9 @@ syntax on
 set number
 set ruler
 " バックアップ・スワップファイルを作成しない
-set backupdir=~/tmp/vim
 set nobackup
-set directory=~/tmp/vim
 set noswapfile
+set undodir=~/tmp/vim
 " タイトルバーにファイルのパス情報を表示
 set title
 " コマンドラインモードでタブキーによるファイル名補完を有効にする
