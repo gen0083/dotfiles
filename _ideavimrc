@@ -1,0 +1,5 @@
+nnoremap x "_x
+vnoremap x "_x
+" IntelJのキーマップバグへの対応
+inoremap <C-]> <esc>
+noremap <C-]> <esc>

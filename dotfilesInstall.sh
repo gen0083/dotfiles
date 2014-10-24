@@ -7,7 +7,7 @@
 # e.g. create .vimrc then add "vimrc" to DOTFILES_LIST
 DOTFILES_DIRECTORY="dotfiles"
 DOTFILES_LIST="vimrc gvimrc bashrc bash_profile gitconfig\
-	gitignore_global"
+	gitignore_global ideavimrc"
 for DOTFILE in $DOTFILES_LIST
 do
 	if [ -f ~/.$DOTFILE ]; then
