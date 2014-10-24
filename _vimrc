@@ -105,6 +105,10 @@ set whichwrap=b,s,h,l,<,>,[,]
 " Xキーで文字削除する際にレジスタに入れない
 nnoremap x "_x
 vnoremap x "_x
+" 使わないキーマップを無効化
+nnoremap ZZ <Nop>
+nnoremap ZQ <Nop>
+nnoremap Q <Nop>
 " vim起動時に自動的にvim-indent-guidesをオンにする
 let g:indent_guides_enable_on_vim_startup = 1
 " grep検索の実行後にQuickFix Listを表示する
