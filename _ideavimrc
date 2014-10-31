@@ -1,5 +1,8 @@
 nnoremap x "_x
 vnoremap x "_x
 " IntelJのキーマップバグへの対応
-inoremap <C-]> <esc>
-noremap <C-]> <esc>
+inoremap <C-]> <C-[>
+noremap <C-]> <C-[>
+" カーソルが行末（行頭）に達した場合次の行（前の行）に移動する
+" ideavimではまだ対応していない
+"set whichwrap=b,s,h,l,<,>,[,]
