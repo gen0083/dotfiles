@@ -119,7 +119,7 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 " http://blog.remora.cx/2010/12/vim-ref-with-unite.html
 """"""""""""""""""""""""""""""
-" Unit.vimの設定
+" Unite.vimの設定
 """"""""""""""""""""""""""""""
 " 入力モードで開始する
 let g:unite_enable_start_insert=1
