@@ -46,6 +46,8 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'bronson/vim-trailing-whitespace'
 " surround.vim
 NeoBundle 'tpope/vim-surround'
+" emmet-vim
+NeoBundle 'mattn/emmet-vim'
 " Syntax-plugins
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'cakebaker/scss-syntax.vim'

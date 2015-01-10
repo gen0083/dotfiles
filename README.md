@@ -54,6 +54,14 @@ Unite.vimで最近使ったファイルを表示できるようにする
 
 ビジュアルモードで選択して`S<p>`とかすると、選択範囲を`<p>`タグで囲ってくれる。
 
+[vim の text-object をより便利に使えるプラグイン - surround.vim](http://secondlife.hatenablog.jp/entry/20061225/1167032528)
+
+### emmet-vim
+
+VimでEmmetを使えるようにするプラグイン。`<C-Y>,`でタグに展開する。
+
+[Emmet-vim](https://github.com/mattn/emmet-vim)
+
 ### tcomment_vim
 
 ビジュアルモードで複数行選択した後`gc`とコマンドを打つことでコメントがトグルされる。（コメントアウト←→通常の切り替え）
@@ -67,6 +75,8 @@ Unite.vimで最近使ったファイルを表示できるようにする
 ### vim-trailing-whitespace
 
 行末の半角スペースを可視化する。
+
+
 
 ### Syntax-plugins
 
