@@ -60,6 +60,7 @@ DerivedData
 .gradle
 build/
 *.iml
+captures/
 
 /*/out
 /*/*/build
