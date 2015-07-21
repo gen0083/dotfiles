@@ -1,5 +1,7 @@
 nnoremap x "_x
 vnoremap x "_x
+nnoremap c "_c
+vnoremap c "_c
 " IntelJのキーマップバグへの対応
 inoremap <C-]> <C-[>
 noremap <C-]> <C-[>

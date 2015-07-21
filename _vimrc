@@ -107,6 +107,8 @@ set whichwrap=b,s,h,l,<,>,[,]
 " Xキーで文字削除する際にレジスタに入れない
 nnoremap x "_x
 vnoremap x "_x
+nnoremap c "_c
+vnoremap c "_c
 " 使わないキーマップを無効化
 nnoremap ZZ <Nop>
 nnoremap ZQ <Nop>
