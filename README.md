@@ -58,7 +58,7 @@ Unite.vimで最近使ったファイルを表示できるようにする
 
 ### emmet-vim
 
-VimでEmmetを使えるようにするプラグイン。`<C-Y>,`でタグに展開する。
+VimでEmmetを使えるようにするプラグイン。`<C-Y><C-,>`でタグに展開する。
 
 [Emmet-vim](https://github.com/mattn/emmet-vim)
 
