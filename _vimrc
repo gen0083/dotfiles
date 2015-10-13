@@ -78,6 +78,8 @@ set noswapfile
 set undodir=~/tmp/vim
 " タイトルバーにファイルのパス情報を表示
 set title
+" 作業ディレクトリを現在表示中のファイルの場所に設定する
+set autochdir
 " コマンドラインモードでタブキーによるファイル名補完を有効にする
 set wildmenu
 " 入力中のコマンド表示
