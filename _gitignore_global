@@ -69,3 +69,6 @@ captures/
 *.ipr
 *~
 *.swp
+
+# cocos2d-x
+obj/

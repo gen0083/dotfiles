@@ -15,3 +15,9 @@ darwin*) # Mac OS X
   alias vim='macvim'
   ;;
 esac
+# enhancd
+if [ -f "/Users/gen0083/.enhancd/bash/enhancd.bash" ]; then
+    source "/Users/gen0083/.enhancd/bash/enhancd.bash"
+fi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
