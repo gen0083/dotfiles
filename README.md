@@ -84,6 +84,12 @@ vim-css3-syntax
 scss-syntax.vim
 vim-javascript-syntax
 
+### RuboCop
+
+rubyの静的コード解析を行うプラグイン。
+`:RuboCop`で実行。
+別途`gem install rubocop`でRubocopをインストールしておかないと動かない。
+
 # (参考)デフォルトアプリケーションの変更
 
 Finderから変更ができるように`.`を`_`に変更しているが、ファイルの更新をMacVimで行うたびに既定のプログラムが書き換わってしまう。（規定のプログラムがテキストエディットになってしまう）

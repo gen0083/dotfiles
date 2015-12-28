@@ -52,6 +52,8 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'cakebaker/scss-syntax.vim'
 NeoBundle 'jelera/vim-javascript-syntax'
+" for ruby
+NeoBundle 'ngmy/vim-rubocop'
 
 call neobundle#end()
 
