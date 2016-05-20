@@ -54,6 +54,7 @@ NeoBundle 'cakebaker/scss-syntax.vim'
 NeoBundle 'jelera/vim-javascript-syntax'
 " for ruby
 NeoBundle 'ngmy/vim-rubocop'
+NeoBundle 'tpope/vim-rails'
 
 call neobundle#end()
 
