@@ -52,9 +52,15 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'cakebaker/scss-syntax.vim'
 NeoBundle 'jelera/vim-javascript-syntax'
-" for ruby
+
+" for ruby plugins
 NeoBundle 'ngmy/vim-rubocop'
+" for rails useful plugin
 NeoBundle 'tpope/vim-rails'
+" add automatically close block e.g. def with end etc.
+NeoBundle 'tpope/vim-endwise'
+" apply color for files included ANSI color information
+NeoBundle 'vim-scripts/AnsiEsc.vim'
 
 call neobundle#end()
 
