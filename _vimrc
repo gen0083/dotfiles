@@ -129,6 +129,7 @@ nnoremap <Left> <C-w>h
 nnoremap <Right> <C-w>l
 nnoremap <Up> <C-w>k
 nnoremap <Down> <C-w>j
+nnoremap <S-q><S-q> <C-w>q
 
 " vim起動時に自動的にvim-indent-guidesをオンにする
 let g:indent_guides_enable_on_vim_startup = 1
