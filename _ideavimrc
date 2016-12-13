@@ -8,3 +8,6 @@ noremap <C-]> <C-[>
 " カーソルが行末（行頭）に達した場合次の行（前の行）に移動する
 " ideavimではまだ対応していない
 "set whichwrap=b,s,h,l,<,>,[,]
+
+" enabled emulate vim-surround
+set surround
