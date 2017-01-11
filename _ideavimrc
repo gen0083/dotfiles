@@ -1,13 +1,17 @@
-nnoremap x "_x
-vnoremap x "_x
-nnoremap c "_c
-vnoremap c "_c
-" IntelJのキーマップバグへの対応
+" enabled emulate vim-surround
+set surround
+
+" xで削除するときはレジスタに入れない
+noremap x "_x
+
+" カーソル移動
+noremap <S-h> ^
+noremap <S-l> $
+
+" IntelJのキーマップバグへの対応（JISキーボードの"["が"]"として認識されてしまう）
 inoremap <C-]> <C-[>
 noremap <C-]> <C-[>
+
 " カーソルが行末（行頭）に達した場合次の行（前の行）に移動する
 " ideavimではまだ対応していない
 "set whichwrap=b,s,h,l,<,>,[,]
-
-" enabled emulate vim-surround
-set surround
