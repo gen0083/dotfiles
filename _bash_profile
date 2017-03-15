@@ -14,6 +14,9 @@ export PATH=$COCOS_CONSOLE_ROOT:$PATH
 alias java='java -Duser.language=en'
 
 source ~/.bashrc
+# enhancd
+# http://www.tellme.tokyo/entry/2015/07/21/142826
+source ~/.enhancd/init.sh
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 # source ~/.profile
