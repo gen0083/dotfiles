@@ -130,6 +130,9 @@ nnoremap <Right> <C-w>l
 nnoremap <Up> <C-w>k
 nnoremap <Down> <C-w>j
 nnoremap <S-q><S-q> <C-w>q
+" カーソル移動
+noremap <S-h> ^
+noremap <S-l> $
 
 " vim起動時に自動的にvim-indent-guidesをオンにする
 let g:indent_guides_enable_on_vim_startup = 1
