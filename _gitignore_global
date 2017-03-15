@@ -56,6 +56,7 @@ DerivedData
 .idea/dataSources.ids
 .idea/inspectionProfiles
 .idea/markdown-navigator
+.idea/dictionaries
 .gradle
 build/
 *.iml
