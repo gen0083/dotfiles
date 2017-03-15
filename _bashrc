@@ -1,6 +1,7 @@
-alias adb='adbp'
+alias adb='adb-peco'
 alias pidcat='pidcatp'
 alias ll='ls -al'
+
 case ${OSTYPE} in
 darwin*) # Mac OS X
   function macvim () {
