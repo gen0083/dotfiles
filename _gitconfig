@@ -23,3 +23,7 @@
 	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 [init]
 	templatedir = ~/.git-templates/git-secrets
+[merge]
+	ff = false
+[pull]
+	ff = only
