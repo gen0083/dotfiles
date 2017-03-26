@@ -20,4 +20,7 @@ source ~/.bashrc
 # http://www.tellme.tokyo/entry/2015/07/21/142826
 source ~/.enhancd/init.sh
 
+# https://github.com/gradle/gradle-completion
+source $HOME/bash_completion.d/gradle-completion.bash
+
 # source ~/.profile
