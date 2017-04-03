@@ -24,3 +24,8 @@ source ~/.enhancd/init.sh
 source $HOME/bash_completion.d/gradle-completion.bash
 
 # source ~/.profile
+
+# Sdkman http://sdkman.io/
+# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/gen0083/.sdkman"
+[[ -s "/Users/gen0083/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/gen0083/.sdkman/bin/sdkman-init.sh"
