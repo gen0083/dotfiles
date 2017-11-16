@@ -76,8 +76,6 @@ VimでEmmetを使えるようにするプラグイン。`<C-Y><C-,>`でタグに
 
 行末の半角スペースを可視化する。
 
-
-
 ### Syntax-plugins
 
 vim-css3-syntax
@@ -99,3 +97,33 @@ Finderから変更ができるように`.`を`_`に変更しているが、フ�
 [RCDefaultApp](http://www.rubicode.com/Software/Bundles.html#RCDefaultApp)を利用して規定のプログラムを書き換える。（Finder→情報を見るからではファイル単位の書き換えになり、しかも更新のたびに元に戻ってしまうため）
 
 RCDefaultApp→UTI→public.txtを変更する。（恐らくこれだけ変えればいけるはず）
+
+## Vim関係以外で別途インストールが必要なもの
+
+.bash_profileを入れても有効にならないので、別途インストールが必要。マシン切替時などにはこれらは別途インストールすること。
+
+## homebrewでインストールするもの
+
+- peco
+- rbenv <https://github.com/rbenv/rbenv>
+- rbenv-gemset
+- ruby-build
+
+### Sdkman
+
+http://sdkman.io/
+
+Javaとかインストールできるツール
+
+### nodebrew
+
+https://github.com/hokaccha/nodebrew
+
+node.jsのバージョン管理ツール
+
+### enhancd
+
+https://github.com/b4b4r07/enhancd
+
+cdコマンド拡張
+
