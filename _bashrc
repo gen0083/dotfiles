@@ -24,7 +24,3 @@ esac
 source /usr/local/etc/bash_completion.d/git-prompt.sh
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/gen0083/.sdkman"
-[[ -s "/Users/gen0083/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/gen0083/.sdkman/bin/sdkman-init.sh"
