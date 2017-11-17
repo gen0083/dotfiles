@@ -5,7 +5,6 @@ export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
 export ANDROID_SDK_ROOT=/Applications/Android/sdk
 export ANDROID_HOME=/Applications/Android/sdk
 export NDK_ROOT=/Applications/Android/sdk/ndk-bundle
-export ANT_ROOT=/Applications/Cocos/tools/ant/bin
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
