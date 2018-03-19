@@ -7,6 +7,9 @@ export ANDROID_HOME=/Applications/Android/sdk
 export NDK_ROOT=/Applications/Android/sdk/ndk-bundle
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$HOME/.rbenv/bin:$PATH
+# flutter sdk
+export PATH=$HOME/program/flutter_sdk/flutter/bin:$PATH
+
 eval "$(rbenv init -)"
 
 # use for fastlane
