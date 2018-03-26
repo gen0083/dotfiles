@@ -2,8 +2,8 @@ if &compatible
   set nocompatible
 endif
 
-let s:dein_directory=$HOME . '/repos/github.com/Shougo/dein.vim'
-let s:plugin_directory=$HOME
+let s:dein_directory=$HOME . '/.cache/dein/repos/github.com/Shougo/dein.vim'
+let s:plugin_directory=$HOME . '/.cache/dein'
 exe 'set runtimepath+=' . expand(s:dein_directory)
 
 " プラグインのセットアップ（dein.vim）
