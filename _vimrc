@@ -1,75 +1,60 @@
-set nocompatible
-filetype off
+if &compatible
+  set nocompatible
+endif
 
-" プラグインのセットアップ（NeoBundle）
-" Note: Skip initialization for vim-tiny or vim-small.
-if !1 | finish | endif
+let s:dein_directory=$HOME . '/repos/github.com/Shougo/dein.vim'
+let s:plugin_directory=$HOME
+exe 'set runtimepath+=' . expand(s:dein_directory)
 
-if has('vim_starting')
-  set nocompatible               " Be iMproved
+" プラグインのセットアップ（dein.vim）
+if dein#load_state(s:plugin_directory)
+  call dein#begin(s:plugin_directory)
 
-  " Required:
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
+  call dein#add(s:dein_directory)
+  " My Bundles here:
+  " ファイルオープンを便利に
+  call dein#add('Shougo/unite.vim')
+  " Unite.vimで最近使ったファイルを表示できるようにする
+  call dein#add('Shougo/neomru.vim')
+  " ファイルをツリー表示
+  call dein#add('scrooloose/nerdtree')
+  " 複数行コメントを手軽に実行
+  call dein#add('tomtom/tcomment_vim')
+  " インデントに色をつけて見やすくする
+  call dein#add('nathanaelkane/vim-indent-guides')
+  " Gitを便利に使う
+  call dein#add('tpope/vim-fugitive')
+  " 行末の半角スペースを可視化
+  call dein#add('bronson/vim-trailing-whitespace')
+  " surround.vim
+  call dein#add('tpope/vim-surround')
+  " emmet-vim
+  call dein#add('mattn/emmet-vim')
+  " Syntax-plugins
+  call dein#add('hail2u/vim-css3-syntax')
+  call dein#add('cakebaker/scss-syntax.vim')
+  call dein#add('jelera/vim-javascript-syntax')
+
+  " for ruby plugins
+  call dein#add('ngmy/vim-rubocop')
+  " for rails useful plugin
+  call dein#add('tpope/vim-rails')
+  " add automatically close block e.g. def with end etc.
+  call dein#add('tpope/vim-endwise')
+  " apply color for files included ANSI color information
+  call dein#add('vim-scripts/AnsiEsc.vim')
+
+  call dein#end()
+  call dein#save_state()
 endif
 
 " Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/vimproc.vim', {
-\ 'build' : {
-\     'windows' : 'tools\\update-dll-mingw',
-\     'cygwin' : 'make -f make_cygwin.mak',
-\     'mac' : 'make -f make_mac.mak',
-\     'linux' : 'make',
-\     'unix' : 'gmake',
-\    },
-\ }
-" My Bundles here:
-" Refer to |:NeoBundle-examples|.
-" Note: You don't set neobundle setting in .gvimrc!
-" ファイルオープンを便利に
-NeoBundle 'Shougo/unite.vim'
-" Unite.vimで最近使ったファイルを表示できるようにする
-NeoBundle 'Shougo/neomru.vim'
-" ファイルをツリー表示
-NeoBundle 'scrooloose/nerdtree'
-" 複数行コメントを手軽に実行
-NeoBundle 'tomtom/tcomment_vim'
-" インデントに色をつけて見やすくする
-NeoBundle 'nathanaelkane/vim-indent-guides'
-" Gitを便利に使う
-NeoBundle 'tpope/vim-fugitive'
-" 行末の半角スペースを可視化
-NeoBundle 'bronson/vim-trailing-whitespace'
-" surround.vim
-NeoBundle 'tpope/vim-surround'
-" emmet-vim
-NeoBundle 'mattn/emmet-vim'
-" Syntax-plugins
-NeoBundle 'hail2u/vim-css3-syntax'
-NeoBundle 'cakebaker/scss-syntax.vim'
-NeoBundle 'jelera/vim-javascript-syntax'
-
-" for ruby plugins
-NeoBundle 'ngmy/vim-rubocop'
-" for rails useful plugin
-NeoBundle 'tpope/vim-rails'
-" add automatically close block e.g. def with end etc.
-NeoBundle 'tpope/vim-endwise'
-" apply color for files included ANSI color information
-NeoBundle 'vim-scripts/AnsiEsc.vim'
-
-call neobundle#end()
-
-" Required:
 filetype plugin indent on
+syntax enable
 
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
+if dein#check_install()
+  call dein#install()
+endif
 
 """"""""""""""""""""
 " 各種オプション設定

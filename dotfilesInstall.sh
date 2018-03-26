@@ -33,6 +33,11 @@ if [ -d ~/.vim ]; then
 
 fi
 ln -s ~/$DOTFILES_DIRECTORY/vimfiles ~/.vim
-# update git submodule
-git submodule init
-git submodule update
+
+# install Dein.vim https://github.com/Shougo/dein.vim
+mkdir -p ~/.cache/dein
+cd ~/.cache/dein
+
+curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+sh ./installer.sh ~/.cache/dein
+
