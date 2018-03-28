@@ -9,6 +9,7 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$HOME/.rbenv/bin:$PATH
 # flutter sdk
 export PATH=$HOME/program/flutter_sdk/flutter/bin:$PATH
+export PATH=$HOME/program/flutter_sdk/flutter/bin/cache/dart-sdk/bin:$PATH
 
 eval "$(rbenv init -)"
 
