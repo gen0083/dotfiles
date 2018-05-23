@@ -1,6 +1,8 @@
 alias adb='adb-peco'
 alias pidcat='pidcatp'
 alias ll='ls -al'
+alias python='python3'
+alias pip='pip3'
 
 case ${OSTYPE} in
 darwin*) # Mac OS X
