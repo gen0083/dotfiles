@@ -34,6 +34,7 @@ if dein#load_state(s:plugin_directory)
   call dein#add('hail2u/vim-css3-syntax')
   call dein#add('cakebaker/scss-syntax.vim')
   call dein#add('jelera/vim-javascript-syntax')
+  call dein#add('chase/vim-ansible-yaml')
 
   " for ruby plugins
   call dein#add('ngmy/vim-rubocop')
