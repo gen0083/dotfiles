@@ -9,9 +9,10 @@ noremap <S-h> ^
 noremap <S-l> $
 
 " IntelJのキーマップバグへの対応（JISキーボードの"["が"]"として認識されてしまう）
-inoremap <C-]> <C-[>
-noremap <C-]> <C-[>
+" inoremap <C-]> <C-[>
+" noremap <C-]> <C-[>
 
 " カーソルが行末（行頭）に達した場合次の行（前の行）に移動する
 " ideavimではまだ対応していない
 "set whichwrap=b,s,h,l,<,>,[,]
+"
