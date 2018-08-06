@@ -25,7 +25,9 @@ alias java='java -Duser.language=en'
 export JDK_16=`/usr/libexec/java_home -v "1.6"`
 export JDK_17=`/usr/libexec/java_home -v "1.7"`
 export JDK_18=`/usr/libexec/java_home -v "1.8"`
+export JDK_9=`/usr/libexec/java_home -v "10"`
 export ANT_OPTS="-Xmx2048m"
+export MAVEN_OPTS="-Xmx2G"
 
 source ~/.bashrc
 # enhancd
