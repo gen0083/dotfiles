@@ -9,6 +9,7 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 # flutter sdk
 export PATH=$HOME/program/flutter_sdk/flutter/bin:$PATH
 export PATH=$HOME/program/flutter_sdk/flutter/bin/cache/dart-sdk/bin:$PATH
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 # use for fastlane
 export LC_ALL=en_US.UTF-8
