@@ -81,3 +81,7 @@ obj/
 build/
 pubspec.lock
 
+# RubyMine
+.idea/.*
+.idea/railways.cache
+.idea/dataSources/*
