@@ -34,10 +34,26 @@ if [ -d ~/.vim ]; then
 fi
 ln -s ~/$DOTFILES_DIRECTORY/vimfiles ~/.vim
 
+# TODO zsh対応
+#ln -s ~/.bash_profile ~/.zprofile
+#ln -s ~/.bashrc ~/.zshrc
+
 # install Dein.vim https://github.com/Shougo/dein.vim
 mkdir -p ~/.cache/dein
 cd ~/.cache/dein
 
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 sh ./installer.sh ~/.cache/dein
+
+# install git-completion
+# TODO: zsh対応
+wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -O ~/.git-completion.bash
+chmod a+x ~/.git-completion.bash
+chmod a+x ~/.git-completion.bash
+# wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh -O ~/.git-completion.zsh
+# chmod a+x ~/.git-completion.zsh
+
+# install git-prompt
+wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -O ~/.git-prompt.sh
+chmod a+x ~/.git-prompt.sh
 

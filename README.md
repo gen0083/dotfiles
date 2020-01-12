@@ -16,25 +16,18 @@ dotfilesディレクトリ下にあるドットファイルへのシンボリッ
 
 カスタマイズしていた場合、シェルスクリプト実行後に退避したファイルから設定をサルベージすること。
 
-シンボリックリンク作成と同時にneobundle.vimの取り込みも同時に行う。（neobundle.vimはgit submoduleで取り込んでいる）
+Vimのプラグインマネージャーに[dein.vim](https://github.com/Shougo/dein.vim)を利用しており、この初期設定も行うようになっている。
+
+ただしdeinはvimを開いて`:call dein#install()`を呼び出さないとプラグインのインストールが完了しないので忘れないように。
+（一応.vimrcに初回読み込み時にインストールするように設定してはいるけれど）
 
 ## インストールしているvim plugin
 
-### NeoBundle
+### dein.vim
+
+<https://github.com/Shougo/dein.vim>
 
 Vimプラグインの管理ツール。
-
-### unite.vim
-
-.vimrcでキーバインドを変更している。
-
-`<C-P>`　バッファ一覧を表示
-
-`<C-N>`　ファイル一覧を表示
-
-### neomru.vim
-
-Unite.vimで最近使ったファイルを表示できるようにする
 
 ### NERDtree
 
@@ -55,6 +48,10 @@ Unite.vimで最近使ったファイルを表示できるようにする
 ビジュアルモードで選択して`S<p>`とかすると、選択範囲を`<p>`タグで囲ってくれる。
 
 [vim の text-object をより便利に使えるプラグイン - surround.vim](http://secondlife.hatenablog.jp/entry/20061225/1167032528)
+
+選択範囲を`()`で囲う場合→ビジュアルモードで選択したあと`S(`で囲う。
+
+`a'hoge'`のhoge内にカーソルがある状態で`ds'`で`ahoge`になる(`''`の囲いを削除する)。同様に`cs'"`で`a"hoge"`と囲い文字を変更する。
 
 ### emmet-vim
 
@@ -105,25 +102,16 @@ RCDefaultApp→UTI→public.txtを変更する。（恐らくこれだけ変え�
 ## homebrewでインストールするもの
 
 - peco
-- rbenv <https://github.com/rbenv/rbenv>
-- rbenv-gemset
-- ruby-build
 
-### Sdkman
+### nodenv
 
-http://sdkman.io/
+<https://github.com/nodenv/nodenv>
 
-Javaとかインストールできるツール
-
-### nodebrew
-
-https://github.com/hokaccha/nodebrew
-
-node.jsのバージョン管理ツール
+nodeのバージョン管理
 
 ### enhancd
 
-https://github.com/b4b4r07/enhancd
+<https://github.com/b4b4r07/enhancd>
 
 cdコマンド拡張
 
