@@ -20,6 +20,11 @@ export PATH=$HOME/program/flutter_sdk/flutter/bin/cache/dart-sdk/bin:$PATH
 # export PATH=$HOME/.nodenv/bin:$PATH
 eval "$(nodenv init -)"
 
+# for rbenv
+[[ -d ~/.rbenv  ]] && \
+  export PATH=${HOME}/.rbenv/bin:${PATH} && \
+  eval "$(rbenv init -)"
+
 # for Kontribute
 # TODO: Catalinaでどうするのか調べる
 # export JDK_16=`/usr/libexec/java_home -v "1.6"`
@@ -38,6 +43,8 @@ GIT_PS1_SHOWSTASHSTATE=1
 
 # プロンプトカスタマイズ
 PS1="\u@\h[\W]$(__git_ps1 " (%s)") $ "
+
+source ~/enhancd/init.sh
 
 source ~/.bashrc
 
