@@ -2,11 +2,13 @@
 set surround
 
 " xで削除するときはレジスタに入れない
-noremap x "_x
+"nnoremap x "_x
 
 " カーソル移動
-noremap <S-h> ^
-noremap <S-l> $
+nnoremap <S-h> ^
+nnoremap <S-l> $
+vnoremap <S-h> ^
+vnoremap <S-l> $
 
 " IntelJのキーマップバグへの対応（JISキーボードの"["が"]"として認識されてしまう）
 " inoremap <C-]> <C-[>
