@@ -51,3 +51,14 @@ setopt prompt_subst
 # プロンプトの右側(RPROMPT)にメソッドの結果を表示させる
 RPROMPT='`rprompt-git-current-branch`'
 
+## split zsh configuration
+ZSHHOME="${HOME}/.zsh.d"
+
+if [ -d $ZSHHOME -a -r $ZSHHOME -a \
+     -x $ZSHHOME ]; then
+    for i in $ZSHHOME/*; do
+        [[ ${i##*/} = *.zsh ]] &&
+            [ \( -f $i -o -h $i \) -a -r $i ] && . $i
+    done
+fi
+
