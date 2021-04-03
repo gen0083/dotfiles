@@ -2,7 +2,7 @@
 set surround
 
 " xで削除するときはレジスタに入れない
-"nnoremap x "_x
+nnoremap x "_x
 
 " カーソル移動
 nnoremap <S-h> ^
@@ -11,8 +11,8 @@ vnoremap <S-h> ^
 vnoremap <S-l> $
 
 " IntelJのキーマップバグへの対応（JISキーボードの"["が"]"として認識されてしまう）
-" inoremap <C-]> <C-[>
-" noremap <C-]> <C-[>
+inoremap <C-]> <esc>
+noremap <C-]> <esc>
 
 " カーソルが行末（行頭）に達した場合次の行（前の行）に移動する
 " ideavimではまだ対応していない
