@@ -16,3 +16,6 @@ export MAVEN_OPTS="-Xmx2G"
 export ANDROID_SDK_ROOT=/Applications/Android/sdk
 export ANDROID_HOME=/Applications/Android/sdk
 export NDK_ROOT=/Applications/Android/sdk/ndk-bundle
+
+# for nodenv
+eval "$(nodenv init -)"
