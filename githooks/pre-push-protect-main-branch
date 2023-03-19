@@ -1,0 +1,14 @@
+#!/bin/sh
+
+remote="$1"
+url="$2"
+
+while read local_ref local_sha remote_ref remote_sha
+do
+  if [[ "$remote_ref" =~ ^.*/(master|main)$ ]]; then
+    echo "\033[0;31m DO NOT PUSH TO $1 on $remote_ref DIRECTLY! \033[0m" 1>&2
+    exit 1
+  fi
+done
+
+exit 0

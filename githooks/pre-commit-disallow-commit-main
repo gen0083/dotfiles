@@ -1,0 +1,13 @@
+#!/bin/sh
+
+###########################################################
+# Protect branch
+###########################################################
+readonly PROTECTED_BRANCHES="(master|main|develop)"
+readonly BRANCH_NAME=`git symbolic-ref HEAD | sed -e 's:^refs/heads/::'`
+
+if [[ "${BRANCH_NAME}" =~ $PROTECTED_BRANCHES ]]; then
+  echo "\033[0;31m NOT ALLOW COMMIT on ${BRANCH_NAME} \033[0m" 1>&2
+  exit 1
+fi
+

@@ -115,3 +115,14 @@ nodeのバージョン管理
 
 cdコマンド拡張
 
+# githooks
+
+例: .git/hooks/pre-commitにmainブランチでのコミットを禁止するgithooksを入れる
+
+```sh
+#!/bin/sh
+
+. ~/dotfiles/githooks/pre-commit-disallow-commit-main
+```
+
+注意：実行権限を与えるのを忘れないこと
