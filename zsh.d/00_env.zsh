@@ -1,4 +1,12 @@
-export PATH=$PATH:/Applications/Android/sdk/tools:/Applications/Android/sdk/platform-tools:~/program/android_tools:~/program/android_tools/dex2jar:/Applications/android-sdk/ndk-bundle
+PATH=$PATH:/Applications/Android/sdk/tools
+PATH=$PATH:/Applications/Android/sdk/platform-tools
+PATH=$PATH:~/program/android_tools/dex2jar
+PATH=$PATH:/Applications/android-sdk/ndk-bundle
+PATH=$PATH:~/program/procon/atcoder_python
+PATH=$PATH:~/program/flutter_sdk/flutter/bin
+PATH=$PATH:/opt/homebrew/bin
+PATH=$PATH:~/.rbenv/bin
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 export JAVA_HOME=`/usr/libexec/java_home -v "11"`
 
@@ -19,3 +27,4 @@ export NDK_ROOT=/Applications/Android/sdk/ndk-bundle
 
 # for nodenv
 eval "$(nodenv init -)"
+eval "$(rbenv init -)"

@@ -27,3 +27,4 @@ esac
 [ -f /Users/gen0083/.travis/travis.sh ] && source /Users/gen0083/.travis/travis.sh
 
 
+. "$HOME/.cargo/env"

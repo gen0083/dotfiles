@@ -1,6 +1,8 @@
 alias ll='ls -al'
 alias python='python3'
 alias pip='pip3'
+# cargo-compete: https://github.com/qryxip/cargo-compete
+alias cct='cargo compete'
 
 case ${OSTYPE} in
 darwin*) # Mac OS X
