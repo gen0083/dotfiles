@@ -26,3 +26,5 @@ export NDK_ROOT=/Applications/Android/sdk/ndk-bundle
 # java_home
 . ~/.asdf/plugins/java/set-java-home.zsh
 
+# 1password
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
