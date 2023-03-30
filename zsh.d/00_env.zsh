@@ -2,6 +2,7 @@ PATH=$PATH:/Applications/Android/sdk/tools
 PATH=$PATH:/Applications/Android/sdk/platform-tools
 PATH=$PATH:~/program/android_tools/dex2jar
 PATH=$PATH:/Applications/android-sdk/ndk-bundle
+PATH=$PATH:"~/Library/Application Support/JetBrains/Toolbox/scripts"
 PATH=$PATH:~/program/procon/atcoder_python
 PATH=$PATH:~/program/flutter_sdk/flutter/bin
 PATH=$PATH:/opt/homebrew/bin
