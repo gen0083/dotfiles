@@ -21,6 +21,18 @@ Vimのプラグインマネージャーに[dein.vim](https://github.com/Shougo/d
 ただしdeinはvimを開いて`:call dein#install()`を呼び出さないとプラグインのインストールが完了しないので忘れないように。
 （一応.vimrcに初回読み込み時にインストールするように設定してはいるけれど）
 
+## asdf
+
+https://asdf-vm.com/manage/versions.html
+
+### java
+
+https://github.com/whichjdk/whichjdk.com
+
+temurinインストールしとけばいいっぽい（Adoptの後継）
+
+java_homeの設定: https://github.com/halcyon/asdf-java
+
 ## インストールしているvim plugin
 
 ### dein.vim
