@@ -3,6 +3,8 @@ alias python='python3'
 alias pip='pip3'
 # cargo-compete: https://github.com/qryxip/cargo-compete
 alias cct='cargo compete'
+# lsusb
+alias lsusb='system_profiler SPUSBDataType'
 
 case ${OSTYPE} in
 darwin*) # Mac OS X
