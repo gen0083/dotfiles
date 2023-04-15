@@ -6,6 +6,8 @@ PATH=$PATH:"~/Library/Application Support/JetBrains/Toolbox/scripts"
 PATH=$PATH:~/program/procon/atcoder_python
 PATH=$PATH:~/program/flutter_sdk/flutter/bin
 PATH=$PATH:/opt/homebrew/bin
+PATH=$PATH:~/.asdf/installs/rust/stable/bin
+PATH=$PATH:~/.asdf/installs/rust/stable/env
 export PATH=$PATH
 
 # for Kontribute
