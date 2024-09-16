@@ -7,6 +7,8 @@ PATH=$PATH:~/program/procon/atcoder_python
 PATH=$PATH:~/program/flutter_sdk/flutter/bin
 PATH=$PATH:/opt/homebrew/bin
 PATH=$PATH:$HOME/.cargo/bin
+PATH=$PATH:$HOME/.docker/bin
+PATH=$PATH:$HOME/.rd/bin
 export PATH=$PATH
 
 # for Kontribute
