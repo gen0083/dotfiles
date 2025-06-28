@@ -31,6 +31,9 @@ export NDK_ROOT=/Applications/Android/sdk/ndk-bundle
 
 export DOCKER_DEFAULT_PLATFORM=linux/amd64
 
+# ollama
+export OLLAMA_MODELS=/Volumes/WDSN7100_1/ai/ollama/models
+
 # 1password
 # export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 
