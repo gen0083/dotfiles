@@ -38,4 +38,3 @@ export OLLAMA_MODELS=/Volumes/WDSN7100_1/ai/ollama/models
 # export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 
 export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8

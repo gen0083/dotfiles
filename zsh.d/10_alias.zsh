@@ -6,6 +6,9 @@ alias cct='cargo compete'
 # lsusb
 alias lsusb='system_profiler SPUSBDataType'
 
+# gemini cli
+alias gemini='npx https://github.com/google-gemini/gemini-cli'
+
 case ${OSTYPE} in
 darwin*) # Mac OS X
   function macvim () {
