@@ -24,11 +24,6 @@ export ANDROID_SDK_ROOT=/Applications/Android/sdk
 export ANDROID_HOME=/Applications/Android/sdk
 export NDK_ROOT=/Applications/Android/sdk/ndk-bundle
 
-# run asdf enabled https://asdf-vm.com/
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-# java_home
-. ~/.asdf/plugins/java/set-java-home.zsh
-
 export DOCKER_DEFAULT_PLATFORM=linux/amd64
 
 # ollama
